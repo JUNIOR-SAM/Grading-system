@@ -1,42 +1,36 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    background-image: 
-        linear-gradient(
-            
-            rgba(0, 0, 255, 0.973),
-            rgba(255, 166, 0, 0.952)
-        ),
-        url(./image/mathematical\ signs.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: screen;  
-    background-attachment: fixed;
-    height:100vh;
-    overflow-y: hidden;
-    position: fixed;
-    right: 0px;
-    left: 0;
-    }
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.973),
+      rgba(255, 166, 0, 0.952)
+    ),
+    url(./image/mathematical\ signs.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+  right: 0px;
+  left: 0;
+}
 .system {
-  background: linear-gradient(
-    135deg,
-    rgb(0, 0, 255),
-    rgba(255, 166, 0, 0.856)
-  );
+  background: linear-gradient(135deg, rgb(0, 0, 255), rgba(255, 166, 0, 0.856));
   width: 500px;
   height: 400px;
   margin: auto;
   text-align: center;
   padding-top: 10px;
   border-radius: 20px;
-  margin-top: 250px;
+  margin-top: 100px;
   max-width: 95%;
-  box-shadow: 1px 1px 10px  rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 input {
   width: 250px;
@@ -78,11 +72,12 @@ button:active {
   color: black;
   width: 250px;
   height: 60px;
-  padding-top: 10px;
+  padding-top: 15px;
   border-radius: 10px;
   margin: auto;
   margin-top: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -90,25 +85,53 @@ button:active {
   color: white;
   width: 80%;
   margin: auto;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-top: 20px;
 }
 
-
-
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: 0.3s ease-in-out;
-    transform: scale(1.1);
-    animation: popOut 1.5s infinite alternate;
-    padding: 40px 0 30px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  animation: popOut 1.5s infinite alternate;
+  padding: 40px 0 30px 0;
+  color: black;
 }
 
 @keyframes popOut {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
+  0% {
+    transform: scale(1);
   }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+h2 {
+  text-align: center;
+  padding-top: 70px;
+  font-family: cursive;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .system {
+    width: 90%;
+    height: 55%;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  #gradeSystem {
+    width: 70%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
