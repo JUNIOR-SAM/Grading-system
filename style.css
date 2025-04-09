@@ -120,6 +120,7 @@ h2 {
   .system {
     width: 90%;
     height: 55%;
+    margin-top: 50px;
   }
 
   input {
