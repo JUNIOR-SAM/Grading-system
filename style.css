@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: 
+        linear-gradient(
+            
+            rgba(0, 0, 255, 0.973),
+            rgba(255, 166, 0, 0.952)
+        ),
+        url(./image/mathematical\ signs.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;  
+    background-attachment: fixed;
+    height:100vh;
+    overflow-y: hidden;
+    position: fixed;
+    right: 0px;
+    left: 0;
+    }
+.system {
+  background: linear-gradient(
+    135deg,
+    rgb(0, 0, 255),
+    rgba(255, 166, 0, 0.856)
+  );
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+  margin-top: 250px;
+  max-width: 95%;
+  box-shadow: 1px 1px 10px  rgb(0, 0, 0);
+}
+input {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 255, 0.658),
+    rgba(255, 166, 0, 0.575)
+  );
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  filter: contrast(1.2);
+}
+
+button:hover,
+button:active {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+#gradeSystem {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  width: 250px;
+  height: 60px;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.h3 {
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+}
+
+
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    animation: popOut 1.5s infinite alternate;
+    padding: 40px 0 30px 0;
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="system">
+      <div class="h3">
+        <marquee direction="left"
+          ><p>
+            Here is a grading system, just input your score and get your grade
+            in an instant.
+          </p></marquee
+        >
+      </div>
+      <h1>GRADING SYSTEM</h1>
+      <input
+        type="number"
+        id="grading"
+        placeholder="please,input your score here"
+      />
+      <br />
+      <button onclick="gradeScore()">check</button>
+      <div id="gradeSystem">your grade here</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
