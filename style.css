@@ -115,6 +115,8 @@ h2 {
 @media (max-width: 600px) {
   h2 {
     font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
   }
 
   .system {
