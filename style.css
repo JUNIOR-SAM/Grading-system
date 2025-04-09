@@ -17,8 +17,6 @@ body {
   height: 100vh;
   overflow-y: hidden;
   position: fixed;
-  right: 0px;
-  left: 0;
 }
 .system {
   background: linear-gradient(135deg, rgb(0, 0, 255), rgba(255, 166, 0, 0.856));
