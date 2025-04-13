@@ -15,8 +15,7 @@ body {
   background-blend-mode: screen;
   background-attachment: fixed;
   height: 100vh;
-  overflow-y: hidden;
-  position: fixed;
+  overflow-y: hidden; 
 }
 .system {
   background: linear-gradient(135deg, rgb(0, 0, 255), rgba(255, 166, 0, 0.856));
@@ -112,16 +111,19 @@ h2 {
   font-size: 50px;
 }
 
-@media (max-width: 600px) {
-  h2 {
+@media (max-width: 600px){
+  h2 { 
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
   }
 
   .system {
     width: 90%;
     height: 55%;
     margin-top: 50px;
+    position: fixed;
+    margin-left: 18px;
   }
 
   input {

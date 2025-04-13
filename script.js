@@ -29,6 +29,6 @@ function gradeScore() {
     gradeSystem.innerHTML = 'F - Fail 😭😭😭 <br> Don’t give up!'
     }
     else {
-        alert('Invalid score!'); 
+        gradeSystem.innerHTML = 'invalid score ❌❌❌' ; 
     }
 }
