@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-image: linear-gradient(
       rgba(0, 0, 255, 0.973),
       rgba(255, 166, 0, 0.952)
@@ -16,44 +16,70 @@ body {
   background-attachment: fixed;
   height: 100vh;
   overflow-y: hidden; 
+} */
+
+body {
+  position: relative;
+  /* ...existing code... */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(./image/mathematical\ signs.jpeg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.2; /* Adjust opacity as needed */
+  z-index: -1;
 }
 .system {
-  background: linear-gradient(135deg, rgb(0, 0, 255), rgba(255, 166, 0, 0.856));
-  width: 500px;
-  height: 400px;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.774), rgba(255, 166, 0, 0.753));
+  width: 800px;
+  height: 500px;
   margin: auto;
   text-align: center;
   padding-top: 10px;
   border-radius: 20px;
   margin-top: 100px;
   max-width: 95%;
+  max-height: 100%;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
+
+::placeholder{
+  font-size: 12px;
+}
+
 input {
-  width: 250px;
+  width: 450px;
   height: 50px;
   border-radius: 10px;
   border: none;
   color: black;
   font-weight: bold;
   text-align: center;
+  font-size: 20px;
 }
 
 button {
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  height: 40px;
   border-radius: 10px;
   border: none;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(0, 0, 255, 0.658),
     rgba(255, 166, 0, 0.575)
-  );
+  ); */
+  background-color: black;
   color: white;
   font-size: 15px;
   letter-spacing: 2px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 30px;
   filter: contrast(1.2);
 }
 
@@ -67,12 +93,12 @@ button:active {
   font-weight: bold;
   background-color: white;
   color: black;
-  width: 250px;
+  width: 450px;
   height: 60px;
   padding-top: 15px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 15px;
